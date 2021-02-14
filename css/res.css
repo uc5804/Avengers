@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+@media (max-width :1199px){
+
+header {position: relative;width: 100%;height: 60px;}     
+header .logo {position: absolute;padding-top: 3px;height: 40px;padding-left: 20px;}
+header nav ul.main {width: auto; height: 60px;position: absolute;top: 3px;left: 25%;}
+
+header nav ul.main li {display: inline-block;border:none;margin-left: 30px;}
+header nav ul.main li:last-child {border-bottom: none;}
+header nav ul.main li a {height: 56px;}
+header nav ul.main li:hover a {background:none; color: #fff; border-bottom: 4px solid #fff;}
+
+header nav .main_bottom {position: absolute;left: 88%; bottom: 13px;}
+header nav .main_bottom h3{display: none;} 
+
+
+main{width: 100%;height: 100%; margin-left: 0;float: left;}
+
+
+
+} 
+
+@media (max-width:991px) {
+    header .logo {padding-top: 3px;}
+    header nav ul.main {left: 40%;}
+    header nav .main_bottom {display: none;}
+
+
+    main section article:nth-child(1) {width: calc(100% / 3); height: 220px;}
+    main section article:nth-child(2) {width: calc(200% / 3);}
+    main section article:nth-child(3) {width: calc(100% / 3);}
+    main section article:nth-child(4) {display: none;}
+    main section article:nth-child(5){width: calc(100% / 3);}
+    main section article:nth-child(6){width: calc(100% / 3);}
+    main section article:nth-child(7){width: calc(200% / 3);}
+    main section article:nth-child(8){width: calc(100% / 3);}
+    main section article:nth-child(9) {display: none;}
+    main section article:nth-child(10){width: calc(100% / 3);}
+    main section article:nth-child(11){width: calc(100% / 3);}
+    main section article:nth-child(12){display: none;}
+    main section article:nth-child(13){display: none;}
+    main section article:nth-child(14){width: calc(100% / 3);}
+
+    main section article:first-child .orange .txt {float: left; position: relative;width: 100%; height: 100%;margin-top: -15px;}
+main section article:first-child .orange .txt p.p {display: none;}
+main section article:nth-child(2) .orange .txt {width: 50%;}
+main section article:nth-child(11) .orange .txt {width: 100%;}
+}
+
+@media (max-width:767px) {
+ header {width: 100%; height: 640px; background-image: url(../img/marvel_all_heroes.jpg); background-position: 50% 50%; background-size: cover; background-repeat: no-repeat; position: relative; }   
+ header .logo {left: 50%;position: absolute;transform: translateX(-50%);padding-top: 70px; padding-bottom: 60px;border-bottom: 4px solid #fff; padding-right: 15px;}
+ header nav ul.main  {width: 160px;height:auto;position: absolute;left: 50%; transform: translateX(-50%); border: 1px solid #fff; border-radius: 10px;top: 200px;padding:0 10px; background:rgba(0,0,0,0.5);}
+ header nav ul.main li {display: block; border-top: 1px solid #fff;width: 100%;margin-left: 0;}
+ header nav ul.main li:hover {}
+ header nav ul.main li:hover a {font-weight: bold;}
+ header nav ul.main li:first-child {border-top: none;}
+ header .black {width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);}
+
+ main {width: 100%; height: auto; border: 10px solid rgb(0, 0, 0, 0.75);}
+ main section{width: 100%;}
+ main section article:nth-child(1) {width: 50%;}
+ main section article:nth-child(2) {width: 50%;}
+ main section article:nth-child(3) {width: 50%;}
+ main section article:nth-child(5) {width: 50%;}
+ main section article:nth-child(6) {width: 50%;}
+ main section article:nth-child(7) {width: 50%;}
+ main section article:nth-child(8){display: none;}
+ main section article:nth-child(10){display: none;}
+ main section article:nth-child(11){width: 100%;}
+ main section article:nth-child(14){display: none;}
+
+
+ main section article:nth-child(2) .orange .txt {width: 100%;}
+ main section article:nth-child(7) .orange .txt {width: 100%;}
+
+ footer {display: block; width: 100%;height: 20px;background: #6ab3b2;}
+ footer p {text-align: center; color: #fff; font-size: 12px;display: block;}
+
+
+
+
+}
+
+/* responseve break point : 1200px 992px 768px */

@@ -1,0 +1,66 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+/* font-family: 'Nanum Gothic', sans-serif; */
+
+*{box-sizing: border-box;}
+html, body{margin: 0; padding: 0; font-family: 'Poiret One','Nanum Gothic', sans-serif;}
+header, section, article, aside, nav, main, footer{display: block;}
+header:after, section:after, article:after, aside:after, nav:after, main:after, footer:after{content:""; display: block; clear: both;}
+h1, h2, h3,h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+
+header{position: fixed; width: 280px; height: 1100px;  background: #E61C23;position: relative;float: left;}
+header .logo{padding-top: 85px; text-align: center;}
+header .logo a{display: block;}
+header .logo a img{width: 140px;height: auto;}
+header nav{padding-top: 60px; text-align: center;}
+header nav ul.main{ width: 100%;}
+header nav ul.main li{border-top: 1px solid rgb(29, 27, 27);}
+header nav ul.main li:hover a {background: #fff; color:#000 ;}
+header nav .main li:last-child {border-bottom:  1px solid rgb(29, 27, 27);}
+header nav .main li a{display: block; line-height: 60px; color:#fff; font-size: 18px;text-align: center;}
+header nav .main_bottom {display: block;position: absolute;bottom: 20px;left: 50%;transform: translate(-50%);}
+header nav .main_bottom h3{padding-bottom: 10px; color: #fff;}
+header nav .main_bottom ul.sns{}
+header nav .main_bottom ul.sns li {display: inline-block;}
+
+main{width:calc(100%-280px); height: auto;  margin-left: 280px;font-size: 0;}
+main section {width: 100%; height: auto;}
+main section article {width: 25%;height: 220px;;float: left; background-size: cover; background-position: 50% 50%; position: relative;overflow: hidden;}
+main section article .orange {display: none;}
+main section article.active .orange{display: block; width: 100%; height: 100%; position: absolute;background: rgba(0,0,0, 0.75);}
+main section article .orange .txt {float: left; position: relative;width: 100%; height: 100%;margin-top: -15px;}
+main section article:nth-child(7) .orange .txt {width: 50%;}
+main section article:nth-child(11) .orange .txt {width: 50%;}
+main section article:nth-child(12) .orange .txt {width: 50%;}
+
+main section article:first-child .orange .txt {margin-top: 100px; height: 300px;}
+main section article:first-child .orange .txt p.p {padding-top: 40px;}
+main section article .orange .txt h3{font-size: 30px;color: #fff; text-align: center;padding-top: 60px;}
+main section article .orange .txt p{font-size: 18px; color: #fff;padding-top: 15px;text-align: center;}
+main section article .orange .txt .under {margin-top: 15px; width: 105px; height: 4px; background: #fff;position: absolute;left: 50%;transform: translate(-50%);}
+main section article .orange .txt .circle{width: 40px;height: 40px; border-radius: 50%; background: #fff;/*position: absolute;left: 50%; transform: translate(-50%);bottom: 25px;*/position: relative;position: absolute;left: 50%;bottom: 7%; transform: translate(-50%);bottom:10px;/*opacity:1; transition: bottom 0.5s, opacity 0.5s;*/ }
+/* main section article.active .orange .txt .circle {transform: translateY();} */
+main section article .orange .txt .circle img{position: absolute;left: 50%;top: 50%;transform: translate( -50%, -50%); transition: transform 0.5s;}
+
+main section article:nth-child(1) {width: 50%; height: 440px;background-image: url(../img/Avengers.jpg);}
+main section article:nth-child(2) {background-image: url(../img/Avengers_01.jpg);}
+main section article:nth-child(3) {background-image:url(../img/Avengers_03.jpg);}
+main section article:nth-child(4) {background-image: url(../img/Avengers_04.jpg);}
+main section article:nth-child(5) {background-image: url(../img/loki.jpg);}
+main section article:nth-child(6) {background-image: url(../img/Avengers_06.jfif);}
+main section article:nth-child(7) {width: 50%; background-image: url(../img/tanos.jpg);background-position: 50% 30%;}
+main section article:nth-child(8) {background-image: url(../img/Avengers_08.jpg);}
+main section article:nth-child(9) {background-image: url(../img/blackWidow.jpg);}
+main section article:nth-child(10) {background-image: url(../img/Avengers_11.jpg);}
+main section article:nth-child(11) {width: 50%; background-image: url(../img/Avengers_09.jpg);}
+main section article:nth-child(12) {width: 50%;background-image: url(../img/Avengers_13.jfif);}
+main section article:nth-child(13) {background-image: url(../img/hawkEye.jpg);}
+main section article:nth-child(14) {background-image: url(../img/blackPenther.jfif);}
+
+footer {display: none;}
+
+
+
